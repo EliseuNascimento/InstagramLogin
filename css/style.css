@@ -61,4 +61,136 @@
     font-size: 13px;
     padding: 0;
     font-weight: bold;
+    cursor: pointer;
+}
+/* Separator */
+.separator{
+    position: relative;
+}
+.separator .line{
+    border-top: 1px solid #DBDBDB;
+    width: 268px;
+    margin: 25px auto 35px auto;
+}  
+.separator span{
+    position: absolute;
+    text-transform: uppercase;
+    color: #BBB;
+    top: -6px;
+    width: 50px;
+    left: 50%;
+    margin-left: -25px;
+    font-size: 14px;
+}
+/* Other login modes*/
+#facebook-login{
+    margin-bottom: 25px;
+}
+#facebook-login a{
+    text-decoration: none;
+    color: #385185;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#facebook-login img{
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+#facebook-login span{
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 1px;
+}
+/* Forget password */
+#forgot-password{
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+#forgot-password a{
+    text-decoration: none;
+    color: #373799;
+}
+/* Register new account */
+#register-container{
+    background-color: #FFF;
+    border: 1px solid #DBDBDB;
+    width: 350px;
+    margin-top: 10px;
+    padding: 10px;
+}
+#register-container p{
+    font-size: 14px;
+    color: #262626;
+}
+#register-container a{
+    color: #4A95F6;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*Download content*/
+#get-app-container{
+    text-align: center;
+    width: 350px;
+}
+#get-app-container p{
+    margin: 20px 0px;
+    font-size: 13px;
+}
+#get-app-container a{
+    text-decoration: none;
+}
+#get-app-container img{
+    width: 136px;
+    height: 40px;
+}
+/*Footer*/
+footer{
+    text-align: left;
+    width: 1000px;
+    margin: 50px auto;
+}  
+footer nav{
+    display: inline-block;
+}  
+footer #footer-links{
+    list-style: none;
+}
+footer #footer-links li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-right: 10px;
+}  
+#footer-links a{
+    text-decoration: none;
+    color: #00376b;
+    font-size: 12px;
+    font-weight: bold;
+}
+#copyright{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #8e8e8e;
+    margin-top: 10px;
+}
+/*Responsive*/
+@media(max-width: 450px){
+    #banner-container{
+        display: none;
+    }
+    #main-container, #form-box{
+        margin-top: 0px;
+    }
+    #form-container, #form-box, #register-container, #get-app-container{
+        width: 100%;
+        border: none;
+    }
+    footer{
+        width: 90%;
+        text-align: center;
+    }
+    #footer-links li{
+        margin-bottom: 10px;
+    }
 }
